@@ -1,0 +1,27 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  
+  #quiz-container {
+    display: none;
+  }
+  
+  #quiz-options {
+    margin-top: 10px;
+  }
+  
+  #quiz-submit {
+    margin-top: 10px;
+  }
+  
+  #quiz-score {
+    margin-top: 10px;
+  }
+
+  #game-over {
+  display: none;
+  }
+  
+  label {
+    margin-right: 10px;
+  }
