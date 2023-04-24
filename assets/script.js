@@ -76,20 +76,21 @@ function showQuestion() {
     }
   }
   
-  option.addEventListener("click", checkAnswer)
-  function checkAnswer(selectedOption) {
+  quizOptions.addEventListener("click", checkAnswer)
+  function checkAnswer(e) {
+    if (e.target.matches("button")) {
     let question = quizData[currentQuestion];
-    if (selectedOption === question.answer) {
-      score++;
-      quizScore.textContent = "Score: " + score;
+    if (e.target.innerText === question.answer) {
+      alert("Correct!")
     } else {
+      alert("Incorrect")
       timeLeft -= 10;
       timerId.textContent = timeLeft;
     }
     currentQuestion++;
     if (currentQuestion === quizData.length) {
-      showScore();
     } else {
       showQuestion();
     }
+  }
   }
