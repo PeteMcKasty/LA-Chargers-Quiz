@@ -14,7 +14,7 @@ let currentQuestion = 0;
 let score = 0;
 let timeLeft = 60;
 let timerId = document.getElementById("timerId");
-let start = document.getElementById("start")
+let start = document.getElementById("start");
 let quizContainer = document.getElementById("quiz-container");
 let quizQuestion = document.getElementById("quiz-question");
 let quizOptions = document.getElementById("quiz-options");
@@ -53,7 +53,7 @@ function startQuiz() {
 function startTimer() {
     const timerInterval = setInterval(function () {
       timeLeft--;
-      timeEl.textContent = timeLeft;
+      timerId.textContent = timeLeft;
       if (secondsLeft === 0) {
         clearInterval(timerInterval);
         showScore();
@@ -76,6 +76,7 @@ function showQuestion() {
     }
   }
   
+  option.addEventListener("click", checkAnswer)
   function checkAnswer(selectedOption) {
     let question = quizData[currentQuestion];
     if (selectedOption === question.answer) {
