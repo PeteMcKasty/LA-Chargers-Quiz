@@ -54,11 +54,10 @@ function startTimer() {
     const timerInterval = setInterval(function () {
       timeLeft--;
       timerId.textContent = timeLeft;
-      if (secondsLeft === 0) {
+      if (timeLeft === 0) {
         clearInterval(timerInterval);
-        showScore();
+        showScore(); 
       }
-  
     }, 1000);
   }
 
@@ -89,6 +88,7 @@ function showQuestion() {
     }
     currentQuestion++;
     if (currentQuestion === quizData.length) {
+      showScore();
     } else {
       showQuestion();
     }
