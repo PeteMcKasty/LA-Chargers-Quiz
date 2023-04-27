@@ -33,7 +33,7 @@ body {
   }
   
   label {
-    margin-left: 50%;
+    margin: auto;
   }
 
   button {

@@ -106,3 +106,13 @@ function showQuestion() {
     quizScore.textContent = "Your Score: " + score
   }
   
+  saveScore.addEventListener("click", function () {
+
+    const scoreLog = {
+      initials: initialsInput.value,
+      finalScore: quizScore.textContent,
+    }
+  
+    localStorage.setItem("scoreLog", JSON.stringify(scoreLog));
+  
+  });
