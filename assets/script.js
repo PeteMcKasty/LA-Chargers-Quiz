@@ -55,12 +55,10 @@ function startTimer() {
       timeLeft--;
       timerId.textContent = timeLeft;
       if (timeLeft === 0) {
-        clearInterval(timerInterval);
-        showScore(); 
+        clearInterval(timerInterval); 
       }
       if (currentQuestion === quizData.length) {
         clearInterval(timerInterval);
-        showScore();
       }
  
     }, 1000);
@@ -101,8 +99,10 @@ function showQuestion() {
   }
 
   function showScore() {
+    gameOver.style.display = "block";
     quizContainer.style.display = "none";
-    gameOver.style.display = "box";
+    timerId.style.display = "none";
     score = timeLeft;
+    quizScore.textContent = "Your Score: " + score
   }
   

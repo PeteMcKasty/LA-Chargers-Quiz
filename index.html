@@ -9,11 +9,11 @@
 </head>
 <body>
     <h1>How Well Do You Know the L.A. Chargers?</h1>
-    <button id="quiz-score">High Scores</button>
+    <button>High Scores</button>
     <div id="start">
         <h2>Take our quiz on basic information about the Los Angeles Chargers from the NFL to see how familiar you are with (subejctively) the best team in the NFL!</h2>
         <button id="start-button">Start</button>
-      </div>
+    </div>
     <div id="quiz">
         <p id="timerId">Time Left:</p>
         <div id="quiz-container">
@@ -23,17 +23,18 @@
           <div id="quiz-options">
 
           </div>
-          <div id="quiz-score"></div>
         </div>
-      </div>
-      <div id="game-over">
-        <h1>Game Over</h1>
+    </div>
+    <div id="game-over">
+        <h1>Quiz Finished!</h1>
+        <h2 id="quiz-score"></h2>
+
         <form>
           <label for="initials">Initials:</label>
           <input type="text" id="initials" name="initials" />
           <button id="save-score">Save Score</button>
         </form>
-      </div>
+    </div>
 
       <script src="./assets/script.js"></script>
 </body>
