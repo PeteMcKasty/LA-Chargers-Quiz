@@ -1,27 +1,46 @@
 body {
+    width: 100%;
+    display: inline-block;
+    margin-left: 50%
+    background-color: lightgray;
+    color: darkblue;
+    font-size: larger;
+    font-weight: bolder;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
   }
+
   
   #quiz-container {
+    margin-left: 50%
     display: none;
   }
   
   #quiz-options {
-    margin-top: 10px;
+    margin: auto;
   }
   
   #quiz-submit {
-    margin-top: 10px;
+    margin: auto;
   }
   
   #quiz-score {
-    margin-top: 10px;
+    margin: auto;
   }
 
   #game-over {
     display: none;
+    margin: auto;
   }
   
   label {
-    margin-right: 10px;
+    margin-left: 50%;
+  }
+
+  button {
+    padding: 12px;
+    font-size: larger;
+    margin: 10px;
+    background-color: yellow;
+    color: darkblue;
+    box-shadow: 2px 5px 5px 2px;
   }

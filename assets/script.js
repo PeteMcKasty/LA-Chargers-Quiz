@@ -26,17 +26,17 @@ let saveScore = document.getElementById("save-score");
 
 const quizData = [
     {
-      question: "Who is the Chargers franchise leader in rushing yards?",
+      question: "Question 1: Who is the Chargers franchise leader in rushing yards?",
       options: ["Darren Sproles", "LaDainian Tomlinson", "Ryan Matthews", "Austin Ekeler"],
       answer: "LaDainian Tomlinson",
     },
     {
-      question: "In what year was the Chargers franchise founded?",
+      question: "Question 2: In what year was the Chargers franchise founded?",
       options: ["1988", "1954", "1972", "1960"],
       answer: "1960",
     },
     {
-      question: "How many super bowls have the Chargers won?",
+      question: "Question 3: How many super bowls have the Chargers won?",
       options: ["the Chargers have never won a super bowl.", "1", "2", "3"],
       answer: "the Chargers have never won a super bowl.",
     },
@@ -53,7 +53,7 @@ function startQuiz() {
 function startTimer() {
     const timerInterval = setInterval(function () {
       timeLeft--;
-      timerId.textContent = timeLeft;
+      timerId.textContent = "Time Left: " + timeLeft;
       if (timeLeft === 0) {
         clearInterval(timerInterval); 
       }
