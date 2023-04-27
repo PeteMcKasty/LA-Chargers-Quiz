@@ -58,6 +58,11 @@ function startTimer() {
         clearInterval(timerInterval);
         showScore(); 
       }
+      if (currentQuestion === quizData.length) {
+        clearInterval(timerInterval);
+        showScore();
+      }
+ 
     }, 1000);
   }
 
@@ -94,3 +99,10 @@ function showQuestion() {
     }
   }
   }
+
+  function showScore() {
+    quizContainer.style.display = "none";
+    gameOver.style.display = "box";
+    score = timeLeft;
+  }
+  
